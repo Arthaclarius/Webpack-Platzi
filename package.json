@@ -1,0 +1,55 @@
+{
+  "name": "webpack-platzi",
+  "version": "1.0.0",
+  "description": "Curso de Webpack en Platzi",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --config ./webpack/webpack.config.js --mode development",
+    "build:dll": "webpack --config ./webpack/webpack.config.dll.js --mode development",
+    "build:dev": "webpack-dev-server --config ./webpack/webpack.config.js --mode development",
+    "build:prod": "webpack --config ./webpack/webpack.config.prod.js --mode production --env.NODE_ENV=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arthaclarius/Webpack-Platzi.git"
+  },
+  "author": "arthaclarius <sgcg5@hotmail.com> (https://twitter.com/Arthaclarius)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Arthaclarius/Webpack-Platzi/issues"
+  },
+  "homepage": "https://github.com/Arthaclarius/Webpack-Platzi#readme",
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.3",
+    "babel-plugin-syntax-dynamic-import": "^6.18.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-es2016": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "clean-webpack-plugin": "^0.1.18",
+    "css-loader": "0.28.10",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "1.1.11",
+    "json-loader": "0.5.7",
+    "less": "^3.0.1",
+    "less-loader": "^4.0.6",
+    "nib": "^1.1.2",
+    "node-sass": "^4.7.2",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-loader": "^2.1.1",
+    "rupture": "^0.7.1",
+    "sass-loader": "^6.0.7",
+    "style-loader": "0.20.2",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "url-loader": "1.0.1",
+    "webpack": "^4.0.1",
+    "webpack-cli": "2.0.9",
+    "webpack-dev-server": "3.0.0"
+  },
+  "dependencies": {
+    "react": "16.2.0",
+    "react-dom": "16.2.0"
+  }
+}
